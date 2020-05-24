@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Blank App</title>
+    </head>
+    <body onload="startTime()">
+		<div class="app">
+			<h1 id="times"></h1>
+			<style>#times {
+					color: red;
+					font-size: 50pt;
+					text-align: center;
+				}
+			</style>
+		</div>
+        <script type="text/javascript">
+			function startTime() {
+				var d = new Date();
+				var h = d.getHours();
+				var m = d.getMinutes();
+				var s = d.getSeconds();
+				m = FullTime(m);
+				s = FullTime(s);
+				document.getElementById('times').innerHTML = h + " : " + m + " : " + s;
+				t = setTimeout('startTime()', 500);
+				function FullTime(i)
+				{ if (i < 10) { i = "0" + i; } return i;}
+			}
+		</script>
+    </body>
+</html>
