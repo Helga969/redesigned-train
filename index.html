@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Calculator</title>
+		
+    </head>
+<body >
+
+
+
+  <div class="tabs" id="tabs">
+    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+    <label for="tab-btn-1" id="labelstyle" align="center" >About</label>
+	
+	
+    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+    <label for="tab-btn-2" id="labelstyle" align="center">Calculator IP</label>
+	
+    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+    <label for="tab-btn-3" id="labelstyle" align="center">Dec -> Bin</label>
+    
+  
+<div id="About" class="tabcontent">
+  <center><h1>Проект "IP калькулятор"</h1>
+  <h2>Выполнен студентками: </h2>
+  <p>Бобрановой Анастасией Владимировной</p>
+  <p>Гущиной Екатериной Алексеевной </p>
+  <p>Третьяковой Ольгой Александровной</p></center>
+  
+</div>
+<script type="text/javascript" src="calculator2.js"></script>
+<div id="CalculatorIP" class="tabcontent">
+  
+  <form id="inpIP">
+      <input id="ip" name="Ip-address" type="tel" class="in" placeholder="Enter IP-address" > 
+      <input id="cidr" name="Mask" type="tel" class="in" placeholder="Enter CIDR" >
+</form>
+<div class="container-buttons" >
+
+<p>
+<button  onclick='calculate();' id="But"class='IPDec'>Calculate</button>	
+<button form ="inpIP" type="reset" id="But" onclick='delip();'class='cidr'>Reset</button></p>
+ </div>
+  <form id="outIP">
+<div class="out">
+<label style=" text-align: left;">Subnet mask
+<label id="resMask" name="Network address" type="text"    ></label>
+   </label>
+  <p> <label  style="text-align: left;">Network address
+   <label id="resNet" name="Network address" type="text">  </label>
+   </label></p>
+  <p>  <label style=" text-align: left;">Broadcast address
+    <label id="resBC" name="Broadcast address" type="text" size="60"></label>
+    </label></p>
+   <p> <label style=" text-align: left;"> Class
+    <label id="resClass" name="Class" type="text" size="60"></label>
+    </label></p>
+   <p> <label style=" text-align: left;">Address range
+    <label id="resRange" name="Address range" type="text" size="60"></label>
+    </label></p>
+   <p> <label style=" text-align: left;">Maximum addresses
+    <label id="resMaxHost" name="Maximum addresses" type="text" size="60"></label>
+    </label></p>
+	</div>
+  </form>
+</div>
+<div id="DecBin" class="tabcontent">
+   <form id='inpip'>
+        <input id="ipb" class="in"name="Ip-address" type="tel" placeholder="Enter IP-address" >
+         <input id="cidrb" class="in" name="Mask" type="tel" placeholder="Enter CIDR"  >
+      </form>
+    <div class="container-buttons">
+	
+	<p>
+    <button onclick='calculateBin();' id="But" class='IPDec'>Calculate</button>	
+    <button form ="inpip" type="reset" id="But" onclick='delipbin();'class='cidr'>Reset</button></p>
+    </div>
+    <form id =" outIP">
+	<div class="out" id="out">
+     <label style=" text-align: left;">IP binary
+     <label id="resBinIP" name="Ip binary" type="text" size="60"></label>
+     </label>
+    <p> <label style="text-align: left;">Mask binary
+     <label id="resBinMask" name="Mask binary" type="text" size="60"></label>
+     </label></p>
+   <p>  <label style="text-align: left;">Network address 
+     <label id="resBinNet" name="Network address binary" type="text" size="60"></label>
+      </label></p>
+    <p>  <label style=" text-align: left;"> Broadcast address
+     <label id="resBinBC" name="Broadcast address binary" type="text" size="60"></label>
+      </label></p>
+	</div>
+	</form>
+	</div>
+</div>
+</body>
+</html>

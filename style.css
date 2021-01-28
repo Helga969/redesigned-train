@@ -1,0 +1,178 @@
+
+body {padding:0px; 
+margin:0; 
+background:url(1928.jpg); 
+font-size:14px; 
+font-family:Consolas;
+color: white;}
+#basic {width:960px; 
+min-height:500px; margin:0 auto; 
+padding:20px 20px 20px 20px; 
+background:url(1928.jpg);}
+img {border:0;}
+a {color:#075482;}
+
+
+
+
+
+
+
+
+
+
+.tabs {
+      font-size: 0;
+    
+     # margin-right: 10%;
+    }
+
+    .tabs>input[type="radio"] {
+      display: none;
+    }
+
+    .tabs>div {
+      /* скрыть контент по умолчанию */
+      display: none;
+     # border: 1px solid #e0e0e0;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+
+    /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+     #tab-btn-1:checked~#About,
+    #tab-btn-2:checked~#CalculatorIP,
+    #tab-btn-3:checked~#DecBin {
+      display: block;
+    }
+
+    .tabs>label { 
+	
+      display: inline-block;
+     
+	  border-radius: 6px;
+      background-color: #0A72B1;
+     border: 2px solid #075482;
+      font-size: 20px;
+      line-height: 1.5;
+      cursor: pointer;
+      #position: relative;
+      top: 1px;
+    }
+
+    .tabs>label:not(:first-of-type) {
+      border-left: none;
+    }
+
+    .tabs>input[type="radio"]:checked+label {
+      background-color: #129df2;
+      border-bottom: 2px solid #075482;
+    }
+
+
+
+
+
+
+
+
+a:hover {text-decoration:none;}
+.IPDec {background:#0A72B1;
+color: white;
+}
+.cidr {background:#0A72B1;
+color: white;}
+.in  {background:#129df2;
+color: white;}
+
+.in::placeholder{color: white;}
+
+
+
+
+
+@media (orientation: landscape) {
+#ipb {height:23px;
+font-size: 23px;
+width: 30vw;
+margin-right: 20px;
+}
+#cidrb {height:23px;
+font-size: 23px;
+width: 15vw; }
+#labelstyle{
+	width:24vw;
+	height:20%;
+	margin-left: 5vw;
+	margin-right:4vw;
+
+	}
+#container-buttons {padding-bottom: 20px;}
+
+
+#ip {height:23px;
+font-size: 23px;
+width: 30vw;
+margin-right: 20px;}
+#cidr {height:23px;
+font-size: 23px;
+width: 15vw; }
+#DecBin{font-size: 23px;}
+#But{font-size: 23px;}
+#out{font-size: 23px;
+column-count: 2;
+display: block;
+}
+#outIP{font-size: 23px;
+column-count: 2;
+display: block;
+}
+}
+@media (orientation: portrait) {
+#tab-btn-1{margin: 0 10% 0 10%;
+width:100vh;
+height:100vh;}
+#tab-btn-2{margin: 0 10% 0 10%;}
+#tab-btn-3{margin: 0 10% 0 10%;}
+#ipb {height:20px;
+font-size: 20px;
+width:55vw;
+ #flex-wrap: wrap;
+margin-bottom: 20px;}
+#cidrb {height:20px;
+font-size: 20px;
+width:35vw;
+margin-bottom:10; }
+#ip {height:20px;
+font-size: 20px;
+width:55vw;
+ #flex-wrap: wrap;
+margin-bottom: 20px;
+#margin-right:20px;}
+#cidr {height:20px;
+font-size: 20px;
+width:35vw;
+margin-bottom:10;
+# flex-wrap: wrap;
+}
+#container-buttons {padding-bottom: 20px;}
+#But{font-size: 20px;
+margin-right:20px;}
+#DecBin{font-size: 20px;}
+#outIP{font-size: 20px;
+}
+#labelstyle{
+	width:27vw;
+	height:20%;
+	margin: 0  2.5vw;
+	#margin-left: 3vw;
+
+	}
+}
+
+
+
+
+
+
+
